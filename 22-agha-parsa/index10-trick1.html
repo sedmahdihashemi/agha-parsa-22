@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+
+    <script>
+        let flag = '' 
+        let _h = new Date().getHours()
+        if(_h <= 6){
+             
+            flag = 'minight'
+
+        }else if( _h <=9 && _h > 6){
+            flag = 'morning'
+
+        }
+        else if( _h <= 14 && _h > 9){
+            flag = 'noon'
+
+        }
+        else if( _h <= 17 && _h > 14){
+            flag = 'afternoon'
+
+        }
+        else if( _h <= 20 && _h > 17){
+            flag = 'evening'
+
+        }else{
+            flag = 'night'
+        }
+        console.log('good ' ,  flag );
+    </script>
+    
+</body>
+</html>

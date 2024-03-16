@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li onclick="_parant(event)"><a href="#">menu <span style="background-color: red;">new</span></a></li>
+        <li onclick="_parant(event)"><a href="#">menu2</a></li>
+        <li onclick="_parant(event)"><a href="#">menu</a></li>
+    </ul>
+
+
+    <script>
+        function _parant(e) {
+
+            e.target.parentElement.parentElement.style.background = 'gray'
+            e.target.parentElement.nextElementSibling.children[0].style.color = 'blue'
+
+        }
+    </script>
+</body>
+
+</html>
